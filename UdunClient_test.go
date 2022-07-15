@@ -1,12 +1,12 @@
 package udun_sdk_go
 
 import (
+	"gitcool.co/htsun/udun-sdk-go/common"
+	"gitcool.co/htsun/udun-sdk-go/config"
+	"gitcool.co/htsun/udun-sdk-go/utils"
 	"log"
 	"testing"
 	"time"
-	"udun-sdk-go/common"
-	"udun-sdk-go/config"
-	"udun-sdk-go/utils"
 )
 
 var url = "https://sig10.udun.io"

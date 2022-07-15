@@ -1,10 +1,10 @@
 package udun_sdk_go
 
 import (
+	"gitcool.co/htsun/udun-sdk-go/common"
+	"gitcool.co/htsun/udun-sdk-go/config"
+	"gitcool.co/htsun/udun-sdk-go/internal"
 	"net/http"
-	"udun-sdk-go/common"
-	"udun-sdk-go/config"
-	"udun-sdk-go/internal"
 )
 
 type UdunClient struct {

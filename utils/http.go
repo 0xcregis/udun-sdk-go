@@ -3,10 +3,10 @@ package utils
 import (
 	"bytes"
 	"encoding/json"
+	"gitcool.co/htsun/udun-sdk-go/common"
 	"github.com/tidwall/gjson"
 	"io/ioutil"
 	"net/http"
-	"udun-sdk-go/common"
 )
 
 func SendRequest(client *http.Client, url string, nonce int, timestamp int64, reqBody string, sign string) (code int64, msg string, extra string) {
