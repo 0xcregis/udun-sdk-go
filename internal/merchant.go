@@ -3,9 +3,9 @@ package internal
 import (
 	"encoding/json"
 	"fmt"
-	"gitcool.co/htsun/udun-sdk-go/common"
-	"gitcool.co/htsun/udun-sdk-go/config"
-	"gitcool.co/htsun/udun-sdk-go/utils"
+	"github.com/uduncloud/udun-sdk-go/common"
+	"github.com/uduncloud/udun-sdk-go/config"
+	"github.com/uduncloud/udun-sdk-go/utils"
 	"net/http"
 )
 

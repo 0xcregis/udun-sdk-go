@@ -3,8 +3,8 @@ package utils
 import (
 	"bytes"
 	"encoding/json"
-	"gitcool.co/htsun/udun-sdk-go/common"
 	"github.com/tidwall/gjson"
+	"github.com/uduncloud/udun-sdk-go/common"
 	"io/ioutil"
 	"net/http"
 )

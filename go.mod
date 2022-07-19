@@ -1,4 +1,4 @@
-module gitcool.co/htsun/udun-sdk-go
+module github.com/uduncloud/udun-sdk-go
 
 go 1.16
 

@@ -1,9 +1,9 @@
 package udun_sdk_go
 
 import (
-	"gitcool.co/htsun/udun-sdk-go/common"
-	"gitcool.co/htsun/udun-sdk-go/config"
-	"gitcool.co/htsun/udun-sdk-go/internal"
+	"github.com/uduncloud/udun-sdk-go/common"
+	"github.com/uduncloud/udun-sdk-go/config"
+	"github.com/uduncloud/udun-sdk-go/internal"
 	"net/http"
 )
 
