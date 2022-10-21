@@ -58,6 +58,7 @@ type WithdrawRequest struct {
 	CoinType     string `json:"coinType"`
 	CallUrl      string `json:"callUrl"`
 	BusinessId   string `json:"businessId"`
+	WalletId     string `json:"walletId"`
 	Memo         string `json:"memo"`
 }
 type Request struct {

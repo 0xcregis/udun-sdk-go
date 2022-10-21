@@ -9,8 +9,8 @@ import (
 	"time"
 )
 
-var url = "https://sig10.udun.io"
-var key = "5ae108d94ffbade8564ef6a0da2dad34"
+var url = "http://gateway01.ruibai.com"
+var key = "ebd7a5ad84a71da31143116e4ed1ea24"
 
 func TestUtil(t *testing.T) {
 	log.Println(utils.Signature(1001, time.Now().Unix(), "hello", key))
@@ -39,13 +39,13 @@ func TestGetSupportCoinsByMerchant(t *testing.T) {
 func TestCreateAddress(t *testing.T) {
 	c := NewUdunClient(config.Config{Url: url})
 	base := common.Request{Timestamp: time.Now().Unix(), Nonce: 1000, Key: key}
-	call := common.CallbackRequest{MerchantId: "309914", MainCoinType: 60, CallUrl: "http://localhost:8080/callBack"}
+	call := common.CallbackRequest{MerchantId: "400044", MainCoinType: 520, CallUrl: "http://localhost:8080/callBack"}
 	log.Println(c.CreateAddress(base, []*common.CallbackRequest{&call}))
 }
 
 func TestWithdraw(t *testing.T) {
 	c := NewUdunClient(config.Config{Url: url})
 	base := common.Request{Timestamp: time.Now().Unix(), Nonce: 1000, Key: key}
-	call := common.WithdrawRequest{MerchantId: "309914", MainCoinType: "60", CoinType: "60", Amount: "0.11", CallUrl: "http://localhost:8080/callBack", Address: "0x465316d9e9b603c306ab6443857bbb653c687081", BusinessId: "9001"}
+	call := common.WithdrawRequest{MerchantId: "400044", MainCoinType: "195", CoinType: "195", Amount: "0.11", CallUrl: "http://localhost:8080/callBack", Address: "TDFwiy9qNjT9ryFS2Wsyacfa5PHS3hUwxn", BusinessId: "9003"}
 	log.Println(c.Withdraw(base, []*common.WithdrawRequest{&call}))
 }
